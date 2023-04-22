@@ -116,7 +116,8 @@ public class Damageable : MonoBehaviour
     {
         if(IsAlive&& !isInvincible)
         {
-            Health -= damage;
+            Health = Mathf.Max(Health - damage, 0);
+            //Health -= damage;
             isInvincible = true;
 
             //IsHit = true;

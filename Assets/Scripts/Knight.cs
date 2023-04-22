@@ -17,6 +17,7 @@ public class Knight : MonoBehaviour
 
     public DetectionZone attackZone;
     public DetectionZone cliffDetectionZone;
+    public DetectionZone playerDetection;
 
     public enum WalkableDirection
     {
@@ -104,7 +105,7 @@ public class Knight : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (touchingDirections.IsGrounded && (touchingDirections.IsOnWall || cliffDetectionZone.detectedColliders.Count == 0))
+        if (touchingDirections.IsGrounded && (touchingDirections.IsOnWall || cliffDetectionZone.detectedColliders.Count == 0 || playerDetection.detectedColliders.Count!=0))
         {
             FlipDirection();
         }

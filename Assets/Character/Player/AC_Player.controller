@@ -1080,6 +1080,7 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: 3933327863486829003}
   - {fileID: 3388862356278455019}
+  - {fileID: 4305528794178255785}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -1577,6 +1578,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boolName: canMove
+  updateOnState: 1
+  updateOnStateMachine: 0
+  valueOnEnter: 0
+  valueOnExit: 0
+--- !u!114 &4305528794178255785
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6e788d437424f48b5608af9d6b3a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boolName: lockVelocity
   updateOnState: 1
   updateOnStateMachine: 0
   valueOnEnter: 0
